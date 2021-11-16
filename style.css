@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: rgb(31, 235, 140);
+    border: 2px solid #555;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: rgb(19, 148, 88);
+}
+
+.container {
+    width: 480px;
+    height: 480px;
+    border: 1px solid #000;
+    display: grid;
+    place-items: center;
+}
+
+.square {
+    border: 1px solid #fff;
+}
+
+.active {
+    background-color: #fff;
+}
