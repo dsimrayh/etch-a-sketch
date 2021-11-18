@@ -10,10 +10,13 @@ function drawGrid(squares = 16) {
         container.appendChild(square);
     }
 
+    const randomValue = () => Math.floor(Math.random() * 256);
+
     const divs = document.querySelectorAll('.square');
     divs.forEach(div => {
         div.addEventListener('mouseenter', (e) => {
-            e.target.classList.add('active');
+            e.target.style.backgroundColor = 
+                `rgb(${randomValue()},255 ,${randomValue()})`;
         });
     });
 }
